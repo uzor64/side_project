@@ -7,7 +7,9 @@ $provs =  safe($_GET['prov']);
 $what = $inc_name = "INCOME TO NATIONAL";
 $department_id = fetch_payment_department_id_from_name($inc_name);
 
-/*	if($idcard == 24 and $provs != ''){
+/*	
+//testing github
+if($idcard == 24 and $provs != ''){
 		//make sure no spying
 	$chkregion =  universal_query_and('id',prov_and_reg,region,$theregionid,province,$provs,$cids=false,$ord=true,'id',$desc=false);
 	if(numr($chkregion) == 0){ redirect_to('menu.php');  }
