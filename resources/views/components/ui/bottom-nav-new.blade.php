@@ -1,7 +1,8 @@
 @props(['active' => null])
 
 <nav class="bg-white border-t border-gray-200 px-4 py-3">
-    <div class="grid grid-cols-4 gap-1">
+    <div class="max-w-sm md:max-w-4xl mx-auto">
+        <div class="grid grid-cols-4 gap-1">
         {{-- My Store --}}
         <button class="flex flex-col items-center py-2 px-1 rounded-lg transition-colors {{ $active === 'store' ? 'text-indigo-600' : 'text-gray-500 hover:text-gray-700' }}">
             <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -33,5 +34,6 @@
             </svg>
             <span class="text-xs font-medium">Reviews</span>
         </button>
+        </div>
     </div>
 </nav>

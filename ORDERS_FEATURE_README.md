@@ -26,10 +26,12 @@ This feature implements a mobile-first orders page that matches the provided des
 ## Features
 - Mobile-first responsive design
 - Clean, modern UI matching the provided image
+- Responsive layout: mobile (full width) → tablet/desktop (centered with max-width)
 - Reusable blade components
 - Status badges with appropriate colors
 - Bottom navigation with active state
 - Proper typography and spacing
+- Responsive spacing and margins for different screen sizes
 
 ## Status Badges
 - **Processing**: Green background
@@ -41,6 +43,11 @@ This feature implements a mobile-first orders page that matches the provided des
 - Orders (active)
 - Products (inactive)
 - Reviews (inactive)
+
+## Responsive Design
+- **Mobile (< 768px)**: Full-width layout, compact spacing
+- **Tablet/Desktop (≥ 768px)**: Centered layout with max-width (col-8 offset-2 equivalent)
+- **Spacing**: Added margins above and below content sections for better visual separation
 
 ## Usage
 Visit `/orders` to see the orders page in action.
