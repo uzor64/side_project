@@ -12,6 +12,10 @@ Route::get('/', function () {
 
 Route::get('/orders', OrdersPage::class)->name('orders');
 
+Route::get('/flowbite-test', function () {
+    return view('flowbite-test');
+})->name('flowbite.test');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
