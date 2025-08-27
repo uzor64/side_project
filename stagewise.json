@@ -1,0 +1,10 @@
+{
+  "port": 8000,
+  "appPort": 80,
+  "autoPlugins": true,
+  "plugins": [],
+  "proxy": {
+    "target": "http://agn.test"
+  }
+}
+
