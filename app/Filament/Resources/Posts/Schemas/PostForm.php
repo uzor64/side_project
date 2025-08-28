@@ -26,6 +26,11 @@ class PostForm
                 Select::make('user_id')
                     ->relationship('user', 'name')
                     ->required(),
+                Select::make('tags')
+                    ->relationship('tags', 'name')
+                    ->multiple()
+                    ->preload()
+                    ->required(),
             ]);
     }
 }

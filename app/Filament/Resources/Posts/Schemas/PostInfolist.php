@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Posts\Schemas;
 
+use App\Models\Post;
 use Filament\Infolists\Components\ImageEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Schema;
@@ -15,6 +16,8 @@ class PostInfolist
                 TextEntry::make('title'),
                 ImageEntry::make('image'),
                 TextEntry::make('slug'),
+                TextEntry::make('tags')
+                    ->formatStateUsing(fn(Post $record) => $record->tags->pluck('name')->implode(', ')),
                 TextEntry::make('user.name'),
                 TextEntry::make('created_at')
                     ->dateTime(),
